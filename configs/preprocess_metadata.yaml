@@ -1,0 +1,3 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean.jsonl"
+out_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+default_gmt_offset_hours: 5

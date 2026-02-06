@@ -1,0 +1,6 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+lowercase: true
+sample_every_tokens: 200
+out_img: "data/reports/heaps_law_loglog.png"
+dpi: 200

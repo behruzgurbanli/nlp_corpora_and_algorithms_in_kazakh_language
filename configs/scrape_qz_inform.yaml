@@ -1,0 +1,31 @@
+base_url: "https://qz.inform.kz"
+
+categories:
+  world:
+    "Ortalyq Aziıa": "https://qz.inform.kz/category/ortalyk-aziya_c211/"
+    "Eýrazııa": "https://qz.inform.kz/category/euraziya_c212/"
+    "Amerıka": "https://qz.inform.kz/category/amerika_c214/"
+  kazakhstan:
+    "Mádenıet": "https://qz.inform.kz/category/madeniet_s10030/"
+    "Sport": "https://qz.inform.kz/category/sport_s10031/"
+  politics:
+    "Prezıdent": "https://qz.inform.kz/category/prezident_c241/"
+    "Halyqaralyq qatynastar": "https://qz.inform.kz/category/halykaralyk-katynastar_c244/"
+  economics:
+    "Ekonomika": "https://qz.inform.kz/category/ekonomika_s10556/"
+
+pages_per_subcategory: 5
+articles_per_subcategory: 50
+max_articles_total: 600
+
+sleep_sec: 1.0
+timeout_sec: 25
+user_agent: "Mozilla/5.0"
+respect_robots: true
+
+min_text_len: 250
+use_trafilatura: "auto"   # auto|true|false
+
+out_jsonl: "data/raw/qz_kazakh_latn.jsonl"
+out_txt:   "data/raw/qz_kazakh_latn.txt"
+out_stats: "data/raw/qz_category_stats.txt"

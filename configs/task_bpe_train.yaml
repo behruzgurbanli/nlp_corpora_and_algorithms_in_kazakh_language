@@ -1,0 +1,7 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+merges: 1000
+text_field: "clean_text"
+lowercase: true
+
+out_merges: "data/processed/bpe_merges_1000.txt"
+log_every: 100

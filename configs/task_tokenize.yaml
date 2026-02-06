@@ -1,0 +1,5 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+lowercase: true
+top_k: 30
+report_docs_override: 400   # keep your old output; set to null to print actual count

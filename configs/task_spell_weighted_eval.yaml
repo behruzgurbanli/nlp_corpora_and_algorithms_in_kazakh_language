@@ -1,0 +1,7 @@
+vocab_file: "data/processed/vocab_words.txt"
+conf_file: "data/processed/confusion_matrix.txt"
+n_test: 300
+seed: 42
+min_word_len: 5
+topn: 5
+max_len_diff: 2

@@ -1,0 +1,5 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+out_tsv: "data/processed/vocab_words.txt"
+text_field: "clean_text"
+lowercase: true
+top_k_print: 20

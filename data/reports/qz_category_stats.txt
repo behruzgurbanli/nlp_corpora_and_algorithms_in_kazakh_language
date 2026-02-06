@@ -1,0 +1,10 @@
+Total articles: 400
+Articles per category:
+- world - Ortalyq Aziıa: 50
+- world - Eýrazııa: 50
+- world - Amerıka: 50
+- kazakhstan - Mádenıet: 50
+- kazakhstan - Sport: 50
+- politics - Prezıdent: 50
+- politics - Halyqaralyq qatynastar: 50
+- economics - Ekonomika: 50

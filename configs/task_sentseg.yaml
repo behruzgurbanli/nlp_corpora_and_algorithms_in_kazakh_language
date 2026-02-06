@@ -1,0 +1,5 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+remove_timestamps: true
+sample_sentences: 10
+sentences_per_doc_for_examples: 2

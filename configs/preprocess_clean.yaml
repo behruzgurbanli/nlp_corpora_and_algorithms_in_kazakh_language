@@ -1,0 +1,7 @@
+inp_jsonl: "data/raw/qz_kazakh_latn.jsonl"
+out_jsonl: "data/processed/qz_kazakh_latn_clean.jsonl"
+
+remove_header_line: true
+remove_urls: true
+remove_twitter: true
+normalize_whitespace: true

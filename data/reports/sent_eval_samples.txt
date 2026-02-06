@@ -1,0 +1,168 @@
+# Sentence Segmentation Evaluation Samples
+# INSTRUCTIONS:
+# For each SAMPLE below:
+# 1) Copy the snippet into the GOLD section
+# 2) Insert NEWLINES where you believe sentence boundaries occur
+# 3) Do NOT delete words; just add line breaks.
+# 4) Save the edited file as: data/reports/sent_eval_gold.txt
+
+=== SAMPLE 1 ===
+URL: https://qz.inform.kz/news/beyzhndeg-kazak-radiosi-habar-taratkanina-54-zhil-toldi-a15743/
+
+SNIPPET:
+Beıjińdegi qazaq radıosy habar taratqanyna 54 jyl toldy
+Kazinform agenttigi sheteldegi qazaq baspasózine apta saıyn sholý jasaýdy 2018 jyly bastaǵan bolatyn. Bul jobany qolǵa alýǵa qazaq tilinde jaryq kóretin baspasóz sany tek Qazaqstanda ǵana emes, shetelderde de artyp kele jatýy sebep bolǵan-dy. Sholýda elimizdiń basqa eldermen saıası, ekonomıkalyq, mádenı salalarda yntymaqtastyǵy jiti nazarǵa alynady. Sondaı-aq shet memleketterdegi ǵylym men tehnıka, oqý-aǵartý salalaryndaǵy sońǵy jetistikterge jiti baqylanady.
+Búgingi materıalda jyl basynan beri jarııalanǵan sheteldegi qazaqtildi baspasózge sholýǵa qysqasha taldaý jasap, eń ózekti, qyzyqty materıaldardy qaıtadan nazarlaryńyzǵa usynamyz.
+Jyl basynda «ParsToday»-de «Iranda qansha qazaq turatynyn bilesiz be» degen taqyryptaǵy aqparat jaryq kórgen edi.
+Osy taqyrypty jazyp kele jatqan 7 jylda oqyrmandarymyz shetelde turyp jatqan etnıkalyq qazaqtar týraly kóbirek bilgisi keletinin ańǵardyq. Máselen 2025 jyldyń 26 qańtarynda jarııalanǵan «Iranda qansha qazaq turatynyn bilesiz be» degen taqyryptaǵy sholý ótken jyldyń eń kóp oqylǵan materıaly boldy (59 685 ret oqylǵan – avt.).
+Irandyq basylymnyń málimetinshe, XX ǵasyrdyń birinshi jartys
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 2 ===
+URL: https://qz.inform.kz/news/bosfordan-denes-tabilgan-er-adamnin-km-eken-aniktaldi-5fbe69/
+
+SNIPPET:
+Bosfordan denesi tabylǵan er adamnyń kim ekeni anyqtaldy
+DNQ caraptamasy Bosfordan tabylǵan er adamnyń denesi reseılik sportshy Nıkolaı Svechnıkovke tıesili ekenin rastady, dep habarlaıdy Kazinform menshikti tilshisi.
+Ystanbulda Kýrýcheshme jaǵalaýyndaǵy Bosfor sýlarynda denesi tabylǵan er adamdy anyqtaý protsedýrasy aıaqtaldy.
+Sot medıtsınasy ınstıtýtynyń málimetinshe, DNQ-taldaý qaza bolǵan er adam 30 jastaǵy reseılik júzýshi Nıkolaı Svechnıkov ekenin anyqtady.
+Eske salaıyq, 24 tamyz kúni Ystanbulda ótken qurlyqaralyq júzý jarysynda 29 jastaǵy reseılik Nıkolaı Svechnıkov joǵalyp ketti. Ol jyl saıyn ótetin «Bosfor 2025» sporttyq sharasyna qatysyp, máre syzyǵyna jete almaǵan.
+Keıinirek onyń otbasy jarys uıymdastyrýshylaryna qarsy sotqa aryz daıyndap jatqany habarlandy.
+Kóp uzamaı ol joǵalyp ketti dep habarlandy. Birneshe aı boıy izdeýge qaramastan júzýshi tabylmady.
+Buǵan deıin Ystanbuldyń Bosforynan júzý kıimin kıgen belgisiz er adamnyń denesi tabylǵanyn jazdyq.
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 3 ===
+URL: https://qz.inform.kz/news/aksh-ta-zansiz-zhurgen-br-top-ozbekstan-azamati-elne-kaytarildi-355dc8/
+
+SNIPPET:
+AQSh-ta zańsyz júrgen bir top Ózbekstan azamaty eline qaıtaryldy
+ASTANA. KAZINFORM — 21 qańtarda Amerıka Qurama Shtattarynyń ýákiletti organdary el aýmaǵynda zańsyz júrgen adamdardy deportatsııalaý úshin taǵy bir charterlik reıs jasady. Bul týraly Ózbekstan Syrtqy ister mınıstrligi habarlady.
+Bul reıspen Ózbekstannyń 44 azamaty otanyna qaıtaryldy.
+Charterlik reıs AQSh-tyń tıisti memlekettik organdarymen birlesip uıymdastyrylǵany jáne ony júzege asyrý «Ózbekstan azamattarynyń eline qaýipsiz jáne ýaqytyly oralýyn qamtamasyz etkeni» atap ótildi.
+-Bul jáıt Ózbekstan men Amerıka Qurama Shtattary arasyndaǵy yntymaqtastyqtyń taǵy bir mańyzdy mysaly bolyp tabylady. Basqa elderdegi elimiz azamattarynyń qaýipsizdigin qamtamasyz etý, olardyń zańdy quqyqtaryn qorǵaý jáne olardy otanyna qaıtarý boıynsha yntymaqtastyq jalǵasyp jatyr, - delingen habarlamada.
+Eske sala keteıik, AQSh-tan deportatsııalanbaq bolǵan ózbekstandyqtar eline oraldy.
+Deportatsııalanǵan ózbekstandyq mıgranttar elge qaıtý shyǵynyn óteýge mindetteledi.
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 4 ===
+URL: https://qz.inform.kz/news/bankterdn-nesie-kurilimi-inflyatsiyaga-kalay-aser-eted-1bcf0a/
+
+SNIPPET:
+Bankterdiń nesıe qurylymy ınflıatsııaǵa qalaı áser etedi
+ASTANA. KAZINFORM — Qazaqstandaǵy tutynýshylyq nesıe júıesi halyqqa qosymsha aýyrtpalyq túsirýde jáne ınflıatsııanyń ósýine áser etýde. Bul týraly Jibek Joly telearnasynyń «Ýáde» baǵdarlamasynda QR Parlamenti Májilisiniń depýtaty, «Respublica» partııasynyń tóraǵasy Aıdarbek Qojanazarov aıtty.
+Depýtattyń aıtýynsha, sońǵy 5–6 jylda bazalyq paıyzdyq stavka 13%-dan 18%-ǵa kóterilgen.
+Bul ár ıpoteka nemese nesıe alýshyǵa jyl saıyn qosymsha tólem túsirýdi bildiredi. Mysaly, bes jylda qosymsha tólemder 25%-ǵa jetýi múmkin.
+— Kóptegen adam tek Qosylǵan qun salyǵynyń ósýine nazar aýdarady (12%-dan 16%-ǵa), al bankterge tólenetin ústeme paıyzdar halyqqa áldeqaıda aýyrtpalyq túsiredi jáne ınflıatsııany arttyrady, — dedi depýtat.
+Qazirgi ýaqytta bankterdiń nesıe portfeliniń 70%-y tutynýshylyq nesıege baǵyttalǵan.
+Sarapshylardyń pikirinshe, bul qurylym kerisinshe bolýy tıis: 70%-y bızneske, 30%-y tutynýshyǵa berilýi kerek. Sol kezde jumys oryndary qarjylanyp, halyq qaryzǵa batpaıdy.
+— Damyǵan elderde ulttyq bankter jumyspen qamtýdy qarjylandyrýǵa jaýapty. Qazaqstanda ulttyq bank tek ınflıatsııaǵa baqylaý jasaıdy. Sondyqtan qarjylandyrý qu
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 5 ===
+URL: https://qz.inform.kz/news/armeniya-men-aksh-tripp-zhobasi-ayasinda-brlesken-kompaniya-kuradi-a10f58/
+
+SNIPPET:
+Armenııa men AQSh TRIPP jobasy aıasynda birlesken kompanııa qurady
+ASTANA. KAZINFORM — Armenııa men AQSh eldiń egemendigin tolyq saqtaı otyryp Armenııa ishinde tranzıttik baǵyttardy júzege asyrý úshin TRIPP Development Company kompanııasyn qurýdy josparlap otyr, dep habarlaıdy Kazinform menshikti tilshisi.
+Bul týraly Armenııa Syrtqy ister mınıstrliginiń Armenııa men AQSh arasynda «Tramptyń halyqaralyq beıbitshilik pen órkendeý baǵyty» (TRIPP) jobasyn iske asyrý boıynsha negizdemelik kelisim týraly jarııalaǵan birlesken málimdeme mátininde aıtylǵan.
+Qujatqa sáıkes, Armenııa TRIPP jobasyn damytýǵa jaýapty bolatyn TRIPP Development Company-di qurýdy ruqsat etip, oǵan kómek kórsetýge nıetti. Kompanııaǵa bastapqy 49 jyl merzimge qurylys júrgizý quqyǵy beriledi dep josparlanyp otyr. Bul rette Armenııa AQSh-qa 74% kólemindegi úlesti usynyp, ózine qatysýdyń 26%-yn qaldyrmaq. Osy merzim aıaqtalǵan soń seriktestik taǵy 50 jylǵa uzartylýy múmkin, sol kezde Armenııa úkimetine qosymsha menshik úlesi berilip, bul oǵan kompanııadaǵy úlesin 49%-ǵa deıin arttyrýǵa múmkindik beredi.
+TRIPP Development Company bastama aıasynda temirjol jáne avtomobıl joldary jobalaryn tikeleı júzege asyrady, sondaı-aq
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 6 ===
+URL: https://qz.inform.kz/news/tramp-prezidenttk-merzmnen-keyn-beybtshlk-kenesn-baskara-beru-mumkn-4a6560/
+
+SNIPPET:
+Tramp prezıdenttik merziminen keıin Beıbitshilik keńesin basqara berýi múmkin
+ASTANA. KAZINFORM — AQSh prezıdenti Donald Tramp prezıdenttik merzimi 2029 jyly aıaqtalǵan soń, Gaza boıynsha Beıbitshilik keńesiniń tóraǵasy laýazymyn saqtap qalýy múmkin, dep habarlady TASS.
+Bloomberg agenttiginiń habarlaýynsha, Tramp Aq úıden ketkennen keıin Beıbitshilik keńesin basqara berýi múmkin. AQSh ákimshiligi Beıbitshilik keńesinde kim qyzmet etetinin, ony kim basqaratynyn jáne onyń qalaı jumys isteıtinin anyqtaýǵa tyrysqanda, Trampqa ómir boıy tóraǵa mártebesin berý múmkindigi osy uıymdy qurý jolyndaǵy taǵy bir máselege aınaldy.
+Buǵan deıin birneshe eldiń basshylaryna AQSh-tan Beıbitshilik keńesine kirý týraly usynys túsken. Bul organnyń jumysy Izraıl men radıkaldy palestınalyq HAMAS qozǵalysy Egıpet, Katar, AQSh jáne Túrkııanyń araaǵaıyndyǵymen 2025 jylǵy qazanda kelisken beıbit jospardyń ekinshi kezeńinde bastalady dep josparlanyp otyr.
+Osyǵan deıin Tramp Makron jáne Rıýttemen aradaǵy jeke jazbalaryn jarııalaǵany týraly jazdyq.
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 7 ===
+URL: https://qz.inform.kz/news/tramp-aksh-tin-venesuelada-bagdarsiz-karu-koldanganin-malmded-22f31b/
+
+SNIPPET:
+Tramp AQSh-tyń Venesýelada «baǵdarsyz» qarý qoldanǵanyn málimdedi
+ASTANA. KAZINFORM — AQSh prezıdenti Donald Tramp New York Post gazetine bergen suhbatynda AQSh áskerı kúshteri Venesýela kóshbasshysy Nıkolas Madýrony basyp alý operatsııasy kezinde jańa qupııa qarýdy qoldanǵanyn habarlady, dep jazdy DW.
+Aq úı basshysynyń aıtýynsha, «The Discombobulator» dep atalatyn bul qurylǵy Qytaı men Reseı óndirisindegi Venesýela áskerı tehnıkasyn isten shyǵarýda mańyzdy ról atqarǵan.
+Tramp CNN telearnasyna AQSh-tyń ishki qaýipsizdik mınıstrligi «Gavana sındromy» dep atalatyn aýrýdy týdyrýy múmkin qurylǵyny satyp alǵany týraly habarlaý kezinde «Dızorentatordyń» paıda bolýyna qatysty pikir bildirdi. Alǵash ret 2016 jyly Kýbadaǵy AQSh elshiliginiń qyzmetkerlerinen qulaqtyń shýyly, bas aınalý jáne bastyń qysymy men terbelisi tirkelgen.
+Bir teorııaǵa sáıkes, sımptomdar mıkrotolqyndy sáýlelenýdiń áserinen týyndaýy múmkin.
+Madýrony ustaý operatsııasynyń kýágerleri qarýdyń oǵash áserin sıpattaǵan. Venesýela prezıdentiniń kúzetshileri kenetten muryndarynan qan ketip, keıbireýleri qan qusqan. Kýágerlerdiń biri ony «óte kúshti dybys tolqyny», «bas ishten jarylyp jatqandaı áser qaldyrdy» dep sıpattady.
+Ven
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 8 ===
+URL: https://qz.inform.kz/news/taylandta-kurilis-kraninin-poyiz-ustne-kulaui-saldarinan-mert-bolgandar-sani-32-ge-zhett-431649/
+
+SNIPPET:
+Taılandta qurylys kranynyń poıyz ústine qulaýy saldarynan mert bolǵandar sany 32-ge jetti
+Taılandta qurylys kranynyń jolaýshylar poıyzynyń ústine qulaýy saldarynan mert bolǵandar sany 32-adamǵa jetti. Bul týraly Thai PBS telearnasyna silteme jasap Belta habarlady.
+Taılandtyń Nakhonratchasıma provıntsııasynyń densaýlyq saqtaý basqarmasynyń málimetinshe, 14 qańtardyń keshine qaraı zardap shekkenderdiń jalpy sany 99 adamǵa jetken. Onyń ishinde 32 adam qaza tapqan, úsh adam habar-osharsyz ketken, qalǵandary ártúrli dárejede jaraqat alǵan.
+Buǵan deıin 22 adamnyń qaza tapqany jáne 79 adamnyń jaralanǵany habarlanǵan edi. Aldyn ala derekterge sáıkes, oqıǵa bolǵan sátte poıyzda barlyǵy 195 jolaýshy bolǵan.
+BBC dereginshe, apat 14 qańtar kúni tańerteń Taılandtyń soltústik-shyǵysyndaǵy Nakhonratchasıma provıntsııasynda bolǵan. Krannyń qulaýy saldarynan poıyz relsten shyǵyp, artynsha órt tutanǵan. Qazir oqıǵa ornynda qutqarý qyzmetteri jumys istep jatyr.
+Koroldik bılik apattyń sebep-saldaryn anyqtaý úshin jan-jaqty ári muqııat tergeý júrgizýdi tapsyrdy. Qaıǵyly oqıǵa Taılandtaǵy kólik qaýipsizdigi máselesin qaıtadan kún tártibine shyǵardy.
+Osyǵan deıin Taılandtyń soltústik-shyǵysynda qurylys k
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 9 ===
+URL: https://qz.inform.kz/news/kor-nariginda-dollar-bagami-kayta-koterld-303862/
+
+SNIPPET:
+Qor naryǵynda dollar baǵamy qaıta kóterildi
+ALMATY. KAZINFORM – Qazaqstan qor bırjasyndaǵy (KASE) saýda-sattyq qorytyndysy boıynsha dollar baǵamy sál qymbattady.
+Kúndizgi saýda-sattyq qorytyndysy boıynsha dollardyń ortasha baǵamy 0,45 teńgege qymbattap, 502,27 teńge boldy. Ulttyq banktiń resmı baǵamy - 501,79 teńge.
+Kurs.kz málimetine sáıkes, Almatynyń aqsha aıyrbastaý pýnktterinde dollar orta eseppen 503,10 teńgeden satyp alynady, 505,30 teńgeden satylady. Eýro 593,64 – 597,85 teńge, al rýbl 6,46 – 6,57 teńge aralyǵynda saýdalanady. Al ıýan 73,43 teńgeden satyp alynady, 76,13 teńgeden satylady.
+Elordanyń aqsha aıyrbastaý oryndarynda:
+– dollar 500,00 teńgeden satyp alynady, 507,00 teńgeden satylady;
+– eýro: satyp alý - 591,00 teńge, satý - 601,00 teńge;
+– rýbl: satyp alý - 6,30 teńge, satý - 6,60 teńge.
+– ıýan: satyp alý - 74,25 teńge, satý - 78,47 teńge.
+Eske salaıyq, 26 qańtar kúndizgi saýda-sattyq qorytyndysy boıynsha dollardyń ortasha baǵamy 1,4 teńgege arzandap, 501,79 teńge boldy.
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+
+=== SAMPLE 10 ===
+URL: https://qz.inform.kz/news/frantsiyada-15-zhaska-tolmagan-balalarga-aleumettk-zhellerge-tiyim-salu-zhedeldetled-b9ebc7/
+
+SNIPPET:
+Frantsııada 15 jasqa tolmaǵan balalarǵa áleýmettik jelilerge tyıym salý jedeldetiledi
+ASTANA. KAZINFORM — Frantsııa prezıdenti Emmanýel Makron 15 jasqa tolmaǵan balalardyń áleýmettik jelilerdi paıdalanýyna tyıym salýdy jedel engizý nıeti bar ekenin málimdedi. Bul týraly Euronews habarlady.
+Zań jobasyn jańa oqý jyly bastalǵanǵa deıin, ıaǵnı qyrkúıek aıyna qaraı qabyldaý josparlanyp otyr.
+Bastamanyń negizgi maqsaty – balalar men jasóspirimderdi tsıfrlyq platformalardyń «zııandy yqpalynan» qorǵaý.
+Frantsııa basshysynyń bul sheshimi Ulybrıtanııa úkimeti jasóspirimderdiń áleýmettik jelilerdi paıdalanýyn shekteý múmkindigin qarastyryp jatqanyn málimdegennen birneshe kún ótken soń qabyldandy. Bul sharalar balalardy zııandy kontentten qorǵaý jáne ekran aldynda shamadan tys ýaqyt ótkizýdiń aldyn alý úshin usynylǵan.
+Azyq-túlik qaýipsizdigi, qorshaǵan orta jáne eńbek qaýipsizdigi jónindegi ulttyq agenttiktiń (A.N.S.E.S) derekterine sáıkes, Frantsııadaǵy árbir ekinshi jasóspirim smartfondy kúnine 2–5 saǵat aralyǵynda paıdalanady. 12–17 jas aralyǵyndaǵy jastardyń shamamen 90 paıyzy ınternetke kún saıyn smartfon arqyly kirse, 58 paıyzy áleýmettik jelilerdi turaqty qoldanady.
+Baıandamada áleýmet
+
+GOLD (YOU EDIT BELOW THIS LINE):
+[PASTE SNIPPET HERE AND ADD NEWLINES FOR SENTENCE BREAKS]
+
+

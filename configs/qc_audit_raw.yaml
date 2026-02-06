@@ -1,0 +1,12 @@
+raw_jsonl: "data/raw/qz_kazakh_latn.jsonl"
+required_fields:
+  - url
+  - domain
+  - title
+  - datetime_raw
+  - text
+  - scraped_at
+  - lang_script
+  - source
+  - category
+  - subcategory

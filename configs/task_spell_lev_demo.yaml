@@ -1,0 +1,7 @@
+vocab_file: "data/processed/vocab_words.txt"
+topn: 5
+max_len_diff: 2
+require_same_first_letter: true
+alphabet: "abcdefghijklmnopqrstuvwxyzáóúǵńýıŋşçöüä"
+seed: 42
+demo_words: ["qazaqstan", "kazinform", "memlekettik", "halyqaralyq"]

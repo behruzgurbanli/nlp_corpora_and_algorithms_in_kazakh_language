@@ -1,0 +1,6 @@
+inp_path: "data/processed/confusion_matrix.txt"
+out_dir: "data/reports"
+top_n: 20
+write_md: true
+write_csv: true
+write_tsv: true
