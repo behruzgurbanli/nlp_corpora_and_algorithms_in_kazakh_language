@@ -19,6 +19,7 @@ from collections import Counter, defaultdict
 from typing import Optional, Dict, List, Tuple
 from urllib.parse import urljoin, urlparse
 from urllib.robotparser import RobotFileParser
+from pathlib import Path
 
 import requests
 from bs4 import BeautifulSoup
@@ -61,6 +62,7 @@ class ScrapeConfig:
     out_jsonl: str = "qz_kazakh_latn.jsonl"
     out_txt: str = "qz_kazakh_latn.txt"
     out_stats: str = "qz_category_stats.txt"
+    append_mode: bool = True
 
     def __post_init__(self):
         # dataclass(frozen=True) -> need object.__setattr__
@@ -252,6 +254,30 @@ def write_stats(stats_path: str, total: int, counts: Counter) -> None:
             f.write(f"- {cat}: {n}\n")
 
 
+def load_existing_urls(jsonl_path: Path) -> set[str]:
+    """
+    Load already-scraped URLs from an existing JSONL file.
+    This prevents duplicates when running scraper multiple times in append mode.
+    """
+    seen: set[str] = set()
+    if not jsonl_path.exists():
+        return seen
+
+    with jsonl_path.open("r", encoding="utf-8") as f:
+        for line in f:
+            line = line.strip()
+            if not line:
+                continue
+            try:
+                obj = json.loads(line)
+            except Exception:
+                continue
+            url = obj.get("url")
+            if isinstance(url, str) and url:
+                seen.add(url)
+    return seen
+
+
 # -------------------------
 # Public entrypoint
 # -------------------------
@@ -265,8 +291,17 @@ def scrape(cfg: ScrapeConfig) -> ScrapeResult:
     """
     robots = RobotsCache()
 
+    out_jsonl = Path(cfg.out_jsonl)
+    out_txt = Path(cfg.out_txt)
+    out_stats = Path(cfg.out_stats)
+
+    # Ensure output directories exist for both fresh and append runs.
+    out_jsonl.parent.mkdir(parents=True, exist_ok=True)
+    out_txt.parent.mkdir(parents=True, exist_ok=True)
+    out_stats.parent.mkdir(parents=True, exist_ok=True)
+
     jobs: List[Tuple[str, str, str]] = []
-    seen = set()
+    seen = load_existing_urls(out_jsonl) if cfg.append_mode else set()
 
     skipped_robots = 0
     skipped_fetch = 0
@@ -312,7 +347,10 @@ def scrape(cfg: ScrapeConfig) -> ScrapeResult:
     counts = Counter()
     saved = 0
 
-    with open(cfg.out_jsonl, "w", encoding="utf-8") as f_json, open(cfg.out_txt, "w", encoding="utf-8") as f_txt:
+    json_mode = "a" if cfg.append_mode else "w"
+    txt_mode = "a" if cfg.append_mode else "w"
+
+    with out_jsonl.open(json_mode, encoding="utf-8") as f_json, out_txt.open(txt_mode, encoding="utf-8") as f_txt:
         for cat, subcat_name, url in tqdm(jobs, desc="Scraping articles"):
             if cfg.respect_robots and (not robots.allowed(url, cfg.user_agent)):
                 skipped_robots += 1
@@ -338,7 +376,7 @@ def scrape(cfg: ScrapeConfig) -> ScrapeResult:
             saved += 1
 
     # 3) Write stats
-    write_stats(cfg.out_stats, saved, counts)
+    write_stats(str(out_stats), saved, counts)
 
     used_traf = (cfg.use_trafilatura == "true") or (cfg.use_trafilatura == "auto" and HAS_TRAF)
 

@@ -1,0 +1,108 @@
+{
+  "dataset": {
+    "input_path": "data/processed/qz_kazakh_latn_clean_norm.jsonl",
+    "docs_total": 2473,
+    "docs_train": 1978,
+    "docs_dev": 247,
+    "docs_test": 248
+  },
+  "examples": {
+    "train_dots": 31902,
+    "dev_dots": 4676,
+    "test_dots": 3946,
+    "train_positive": 31141,
+    "dev_positive": 4590,
+    "test_positive": 3855
+  },
+  "l1": {
+    "C": 1.0,
+    "metrics": {
+      "train": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "dev": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      },
+      "test": {
+        "accuracy": 1.0,
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1": 1.0
+      }
+    }
+  },
+  "l2": {
+    "C": 1.0,
+    "metrics": {
+      "train": {
+        "accuracy": 0.9999373080057676,
+        "precision": 0.9999357801111004,
+        "recall": 1.0,
+        "f1": 0.9999678890244685
+      },
+      "dev": {
+        "accuracy": 0.9991445680068435,
+        "precision": 0.9991292990857641,
+        "recall": 1.0,
+        "f1": 0.9995644599303136
+      },
+      "test": {
+        "accuracy": 0.9997465788139889,
+        "precision": 0.9997406639004149,
+        "recall": 1.0,
+        "f1": 0.9998703151342239
+      }
+    }
+  },
+  "best_model_by_dev_f1": "l1",
+  "chosen_threshold": 0.3,
+  "threshold_tuned_on_dev": true,
+  "error_samples_best_model": {
+    "false_positives": [],
+    "false_negatives": []
+  },
+  "sentence_detection_preview_best_model": [
+    {
+      "doc_id": "7100ea2868296b9a",
+      "url": "https://qz.inform.kz/news/aksh-tin-dzhordzhiya-shtatindagi-hyundai-zauitinda-475-adam-ustaldi-b2e3d4/",
+      "predicted_sentence_count": 11,
+      "predicted_first_5_sentences": [
+        "ASTANA.",
+        "— AQSh-tyń Immıgratsııalyq jáne kedendik baqylaý qyzmeti (ICE) Djordjııa shtatyndaǵy Hyundai kompanııasyna tıesili elektromobıl akkýmýlıatorlaryn óndiretin zaýytta reıd júrgizip, 475 adamdy ustady, dep jazady Anadoly.",
+        "AQSh-tyń Іshki qaýipsizdik mınıstrliginiń málimetinshe, operatsııa Federaldy tergeý bıýrosy (FBR) men shtattyq polıtsııamen birlesip júrgizilgen.",
+        "Ellabell qalasyndaǵy kásiporynǵa reıd «jumysqa zańsyz ornalastyrý jáne ózge de aýyr federaldyq qylmystar boıynsha júrip jatqan qylmystyq tergeý aıasynda» ótken.",
+        "Reıd federaldy sýdıanyń sanktsııasymen júzege asqan."
+      ]
+    },
+    {
+      "doc_id": "b046d4c55e90f647",
+      "url": "https://qz.inform.kz/news/biltir-ozbekstan-ukmet-shetelde-kiin-zhagdayda-kalgan-otandastarin-elge-kaytaruga-13-mln-zhumsadi-4e1494/",
+      "predicted_sentence_count": 10,
+      "predicted_first_5_sentences": [
+        "Byltyr Ózbekstan úkimeti shetelde qıyn jaǵdaıda qalǵan otandastaryn elge qaıtarýǵa $1,3 mln jumsady\nTAShKENT.",
+        "KAZINFORM – 2025 jyly Ózbekstan 3 709 otandasyn elge qaıtardy, dep habarlaıdy Kazinform agenttiginiń menshikti tilshisi.",
+        "Kóshi-qon agenttiginen málim etkendeı, bul baǵyttaǵy jumystarǵa 15,9 mld sým (shamamen $1,3 mln) qarajat jumsalǵan.",
+        "Adam saýdasyna qarsy kúres úshin 30 shilde men 30 tamyz aralyǵynda uıymdastyrylǵan «Vatanga kaıtarısh» (Otanǵa qaıtarý) aktsııasy aıasynda 1,3 myń azamat Ózbekstanǵa oraldy.",
+        "Baǵdarlama aıasynda shet elderdiń aýmaǵynda qıyn jaǵdaıda qalǵan adamdar elge jetkizildi."
+      ]
+    },
+    {
+      "doc_id": "9fda248edb7b38ef",
+      "url": "https://qz.inform.kz/news/tramp-alyaskada-mis-pen-mirish-ondrsn-ulgaytudi-makuldadi-138fc5/",
+      "predicted_sentence_count": 13,
+      "predicted_first_5_sentences": [
+        "ASTANA.",
+        "— AQSh prezıdenti Donald Tramp mys, kobalt, altyn jáne basqa da paıdaly qazbalardy óndirisin qamtamasyz etý úshin Alıaskadaǵy qý dala arqyly ótetin 211 mıl jol qurylysyn maquldaýǵa buıryq berdi, dep habarlaıdy ABC News .",
+        "— Alıaska shtatyndaǵy Ferbenks qalasynan soltústikke qaraı qıyrshyq tas jol jáne paıdaly qazbalardy óndirý jobasy bizdiń elimizge baıaǵydan-aq mıllıardtaǵan dollar ákelip, bizdi mol energııa men mıneraldarmen qamtamasyz etýi kerek edi, — dedi Donald Tramp.",
+        "Jobany qoldaýshylar, onyń ishinde Alıaskanyń Kongrestegi delegatsııasy bul jol quny 7 mlrd dollardan asatyn iri mys ken ornyna jetý úshin qajet ekenin málimdedi.",
+        "Mys avtomobıl, elektronıka, tipti jel týrbınalary sııaqty jańartylatyn energııa tehnologııalaryn óndirýde qoldanylady."
+      ]
+    }
+  ]
+}

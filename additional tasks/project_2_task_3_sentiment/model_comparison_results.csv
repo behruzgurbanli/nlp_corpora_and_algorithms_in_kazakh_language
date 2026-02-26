@@ -1,0 +1,5 @@
+Model,Feature,Accuracy,F1
+Multinomial NB,Bag-of-Words,0.8429,0.8408791654005875
+Bernoulli NB,Bag-of-Words,0.8515,0.8513364701171289
+Logistic Regression,Bag-of-Words,0.8742,0.8755441234665612
+Logistic Regression,Lexicon,0.7289,0.7346059716103769

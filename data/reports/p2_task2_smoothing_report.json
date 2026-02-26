@@ -1,0 +1,83 @@
+{
+  "dataset": {
+    "input_path": "data/processed/qz_kazakh_latn_clean_norm.jsonl",
+    "docs_total": 2473,
+    "docs_train": 1978,
+    "docs_dev": 247,
+    "docs_test": 248
+  },
+  "settings": {
+    "train_ratio": 0.8,
+    "dev_ratio": 0.1,
+    "seed": 42,
+    "min_count": 2,
+    "vocab_size": 24601,
+    "laplace_alpha": 1.0,
+    "interpolation_lambdas": [
+      0.1,
+      0.3,
+      0.6
+    ],
+    "backoff_gamma": 0.4,
+    "kn_discount": 0.75
+  },
+  "methods": {
+    "laplace": {
+      "train": {
+        "events": 454144,
+        "perplexity": 6727.215956437897
+      },
+      "dev": {
+        "events": 65588,
+        "perplexity": 11473.735737806424
+      },
+      "test": {
+        "events": 55091,
+        "perplexity": 10759.109452844106
+      }
+    },
+    "interpolation": {
+      "train": {
+        "events": 454144,
+        "perplexity": 5.267881683759811
+      },
+      "dev": {
+        "events": 65588,
+        "perplexity": 672.9280435404885
+      },
+      "test": {
+        "events": 55091,
+        "perplexity": 532.7362383548447
+      }
+    },
+    "backoff": {
+      "train": {
+        "events": 454144,
+        "perplexity": 3.722864858024646
+      },
+      "dev": {
+        "events": 65588,
+        "perplexity": 503.2842499135251
+      },
+      "test": {
+        "events": 55091,
+        "perplexity": 398.3171062960035
+      }
+    },
+    "kneser_ney": {
+      "train": {
+        "events": 454144,
+        "perplexity": 8.168232529094777
+      },
+      "dev": {
+        "events": 65588,
+        "perplexity": 335.12963090891554
+      },
+      "test": {
+        "events": 55091,
+        "perplexity": 277.26281517800123
+      }
+    }
+  },
+  "best_method_by_dev_perplexity": "kneser_ney"
+}

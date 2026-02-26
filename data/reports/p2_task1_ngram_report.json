@@ -1,0 +1,329 @@
+{
+  "dataset": {
+    "input_path": "data/processed/qz_kazakh_latn_clean_norm.jsonl",
+    "docs_total": 2473,
+    "docs_train": 1978,
+    "docs_dev": 247,
+    "docs_test": 248
+  },
+  "settings": {
+    "text_field": "clean_text",
+    "lowercase": true,
+    "remove_timestamps": true,
+    "train_ratio": 0.8,
+    "dev_ratio": 0.1,
+    "seed": 42,
+    "min_count": 2
+  },
+  "vocab": {
+    "size_with_specials": 24601
+  },
+  "models": {
+    "unigram": {
+      "unique_ngrams": 24600,
+      "top_ngrams": [
+        [
+          "</s>",
+          33062
+        ],
+        [
+          "<UNK>",
+          24532
+        ],
+        [
+          "jáne",
+          5282
+        ],
+        [
+          "men",
+          3709
+        ],
+        [
+          "bul",
+          3363
+        ],
+        [
+          "dep",
+          2467
+        ],
+        [
+          "deıin",
+          1900
+        ],
+        [
+          "aqsh",
+          1852
+        ],
+        [
+          "úshin",
+          1793
+        ],
+        [
+          "týraly",
+          1690
+        ],
+        [
+          "qazaqparat",
+          1668
+        ],
+        [
+          "haa",
+          1668
+        ],
+        [
+          "astana",
+          1653
+        ],
+        [
+          "qazaqstan",
+          1434
+        ],
+        [
+          "ol",
+          1389
+        ],
+        [
+          "boıynsha",
+          1218
+        ],
+        [
+          "aq",
+          1179
+        ],
+        [
+          "onyń",
+          1150
+        ],
+        [
+          "da",
+          1126
+        ],
+        [
+          "ulttyq",
+          1057
+        ]
+      ],
+      "perplexity": {
+        "train": {
+          "events": 454144,
+          "zero_events": 0,
+          "perplexity": 2794.394602282891
+        },
+        "dev": {
+          "events": 65588,
+          "zero_events": 0,
+          "perplexity": 2018.0583069334123
+        },
+        "test": {
+          "events": 55091,
+          "zero_events": 0,
+          "perplexity": 2038.6794638139284
+        }
+      }
+    },
+    "bigram": {
+      "unique_ngrams": 224342,
+      "top_ngrams": [
+        [
+          "<UNK> <UNK>",
+          3247
+        ],
+        [
+          "<s> bul",
+          1868
+        ],
+        [
+          "qazaqparat haa",
+          1665
+        ],
+        [
+          "haa </s>",
+          1665
+        ],
+        [
+          "<s> qazaqparat",
+          1645
+        ],
+        [
+          "astana </s>",
+          1412
+        ],
+        [
+          "<s> astana",
+          1341
+        ],
+        [
+          "<UNK> </s>",
+          1202
+        ],
+        [
+          "sondaı aq",
+          946
+        ],
+        [
+          "<s> <UNK>",
+          933
+        ],
+        [
+          "dep habarlaıdy",
+          913
+        ],
+        [
+          "buǵan deıin",
+          807
+        ],
+        [
+          "ótti </s>",
+          672
+        ],
+        [
+          "boldy </s>",
+          656
+        ],
+        [
+          "<s> eske",
+          619
+        ],
+        [
+          "<s> buǵan",
+          605
+        ],
+        [
+          "<s> ol",
+          596
+        ],
+        [
+          "otyr </s>",
+          585
+        ],
+        [
+          "<s> aıta",
+          570
+        ],
+        [
+          "sonymen qatar",
+          557
+        ]
+      ],
+      "perplexity": {
+        "train": {
+          "events": 454144,
+          "zero_events": 0,
+          "perplexity": 29.848758684966928
+        },
+        "dev": {
+          "events": 65588,
+          "zero_events": 23709,
+          "perplexity": Infinity
+        },
+        "test": {
+          "events": 55091,
+          "zero_events": 19018,
+          "perplexity": Infinity
+        }
+      }
+    },
+    "trigram": {
+      "unique_ngrams": 337356,
+      "top_ngrams": [
+        [
+          "<s> <s> bul",
+          1868
+        ],
+        [
+          "qazaqparat haa </s>",
+          1665
+        ],
+        [
+          "<s> <s> qazaqparat",
+          1645
+        ],
+        [
+          "<s> qazaqparat haa",
+          1642
+        ],
+        [
+          "<s> <s> astana",
+          1341
+        ],
+        [
+          "<s> astana </s>",
+          1304
+        ],
+        [
+          "<s> <s> <UNK>",
+          933
+        ],
+        [
+          "<UNK> <UNK> <UNK>",
+          623
+        ],
+        [
+          "<s> <s> eske",
+          619
+        ],
+        [
+          "<s> <s> buǵan",
+          605
+        ],
+        [
+          "<s> <s> ol",
+          596
+        ],
+        [
+          "<s> <s> aıta",
+          570
+        ],
+        [
+          "<s> buǵan deıin",
+          527
+        ],
+        [
+          "<s> <s> sonymen",
+          517
+        ],
+        [
+          "<s> <s> sondaı",
+          515
+        ],
+        [
+          "<s> sondaı aq",
+          511
+        ],
+        [
+          "<s> <s> al",
+          504
+        ],
+        [
+          "<s> <s> onyń",
+          496
+        ],
+        [
+          "<s> sonymen qatar",
+          458
+        ],
+        [
+          "<s> bul týraly",
+          436
+        ]
+      ],
+      "perplexity": {
+        "train": {
+          "events": 454144,
+          "zero_events": 0,
+          "perplexity": 3.722864858024646
+        },
+        "dev": {
+          "events": 65588,
+          "zero_events": 44698,
+          "perplexity": Infinity
+        },
+        "test": {
+          "events": 55091,
+          "zero_events": 35699,
+          "perplexity": Infinity
+        }
+      }
+    }
+  }
+}

@@ -14,9 +14,13 @@ echo
 
 cd "$PROJECT_ROOT"
 
+export PYTHONPATH="$PROJECT_ROOT/src"
+
+SCRAPE_CONFIG="${1:-configs/scrape_qz_inform.yaml}"
+
 echo "=== Scraping: qz.inform.kz ==="
 python -m nlp_project.cli scrape \
-  --config configs/scrape_qz_inform.yaml
+  --config "$SCRAPE_CONFIG"
 echo
 
 echo "✅ Scraping completed successfully"

@@ -43,6 +43,21 @@ from nlp_project.tasks.confusion_synth import ConfusionSynthConfig, build_confus
 from nlp_project.tasks.spell_weighted import SpellWeightedConfig, run_spell_weighted_demo
 from nlp_project.tasks.spell_weighted_eval import SpellWeightedEvalConfig, run_spell_weighted_eval, format_spell_weighted_eval_report
 from nlp_project.tasks.confusion_top import ConfusionTopConfig, run_confusion_top
+from nlp_project.p2.task1_ngram import (
+    P2Task1NgramConfig,
+    run_p2_task1_ngram,
+    format_p2_task1_ngram_report,
+)
+from nlp_project.p2.task2_smoothing import (
+    P2Task2SmoothingConfig,
+    run_p2_task2_smoothing,
+    format_p2_task2_smoothing_report,
+)
+from nlp_project.p2.task4_dot_lr import (
+    P2Task4DotLRConfig,
+    run_p2_task4_dot_lr,
+    format_p2_task4_dot_lr_report,
+)
 
 
 
@@ -190,6 +205,27 @@ def cmd_task_confusion_top(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_task_p2_ngram(args: argparse.Namespace) -> int:
+    cfg = load_config_as(args.config, P2Task1NgramConfig)
+    r = run_p2_task1_ngram(cfg)
+    print(format_p2_task1_ngram_report(r, cfg.out_json))
+    return 0
+
+
+def cmd_task_p2_smoothing(args: argparse.Namespace) -> int:
+    cfg = load_config_as(args.config, P2Task2SmoothingConfig)
+    r = run_p2_task2_smoothing(cfg)
+    print(format_p2_task2_smoothing_report(r, cfg.out_json))
+    return 0
+
+
+def cmd_task_p2_dot_lr(args: argparse.Namespace) -> int:
+    cfg = load_config_as(args.config, P2Task4DotLRConfig)
+    r = run_p2_task4_dot_lr(cfg)
+    print(format_p2_task4_dot_lr_report(r, cfg.out_json))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="nlp_project", description="Kazakh NLP corpus pipeline")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -283,6 +319,18 @@ def build_parser() -> argparse.ArgumentParser:
     p_ctop = sub_task.add_parser("confusion-top", help="Generate Top-N confusion table (md/csv/tsv)")
     p_ctop.add_argument("--config", required=True, help="Path to task_confusion_top YAML config")
     p_ctop.set_defaults(func=cmd_task_confusion_top)
+
+    p_p2_ng = sub_task.add_parser("p2-ngram", help="Project 2 Task 1: n-gram models + perplexity")
+    p_p2_ng.add_argument("--config", required=True, help="Path to task_p2_ngram YAML config")
+    p_p2_ng.set_defaults(func=cmd_task_p2_ngram)
+
+    p_p2_sm = sub_task.add_parser("p2-smoothing", help="Project 2 Task 2: smoothing comparison")
+    p_p2_sm.add_argument("--config", required=True, help="Path to task_p2_smoothing YAML config")
+    p_p2_sm.set_defaults(func=cmd_task_p2_smoothing)
+
+    p_p2_lr = sub_task.add_parser("p2-dot-lr", help="Project 2 Task 4: dot EoS logistic regression (L1/L2)")
+    p_p2_lr.add_argument("--config", required=True, help="Path to task_p2_dot_lr YAML config")
+    p_p2_lr.set_defaults(func=cmd_task_p2_dot_lr)
 
     return p
 

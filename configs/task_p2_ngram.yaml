@@ -1,0 +1,12 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+lowercase: true
+remove_timestamps: true
+
+train_ratio: 0.8
+dev_ratio: 0.1
+seed: 42
+min_count: 2
+
+top_k: 20
+out_json: "data/reports/p2_task1_ngram_report.json"

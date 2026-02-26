@@ -29,3 +29,4 @@ use_trafilatura: "auto"   # auto|true|false
 out_jsonl: "data/raw/qz_kazakh_latn.jsonl"
 out_txt:   "data/raw/qz_kazakh_latn.txt"
 out_stats: "data/raw/qz_category_stats.txt"
+append_mode: true

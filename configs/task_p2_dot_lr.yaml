@@ -1,0 +1,14 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+remove_timestamps: true
+
+train_ratio: 0.8
+dev_ratio: 0.1
+seed: 42
+
+c_l1: 1.0
+c_l2: 1.0
+max_iter: 1500
+threshold: 0.5
+
+out_json: "data/reports/p2_task4_dot_lr_report.json"

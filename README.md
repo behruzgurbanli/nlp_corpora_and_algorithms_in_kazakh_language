@@ -1,187 +1,130 @@
-# Kazakh NLP Corpus Pipeline — Demo UI & CLI
+# Kazakh NLP Project (P1 + P2) — CLI and Streamlit
 
-This project implements an end-to-end NLP corpus pipeline for **Kazakh (kk-Latn)** news text, including preprocessing, quality control, tokenization, vocabulary analysis, Heaps’ Law, BPE, sentence segmentation, and spell checking (baseline + weighted).
+This repository contains an end-to-end NLP pipeline on a Kazakh (kk-Latn) news corpus.
 
-The project is designed with **three layers**:
+- **Project 1**: corpus creation, preprocessing, QC, tokenization, Heaps' law, BPE, sentence segmentation, spell checking.
+- **Project 2**: n-gram language modeling, smoothing comparison, and logistic-regression-based sentence boundary task.
 
-1. **Library layer** (`src/nlp_project/`) — pure Python logic  
-2. **CLI layer** (`nlp_project.cli`) — reproducible task execution via YAML  
-3. **Demo UI** (`src/ui/app.py`) — interactive Streamlit interface for live demos  
+The code is organized so you can rerun tasks with YAML configs and demo results in UI.
 
-The UI runs the **real tasks**, not mock outputs.
+## 1) Project Structure
 
----
-
-## 1. Running the Demo UI (Recommended for Presentation)
-
-This is the **primary way** to demonstrate the project.
-
-### Step 1 — Activate environment (e.g., anaconda) (Optional)
-```bash
-conda activate base
-```
-
-### Step 2 — Run the UI
-From the project root:
-```bash
-./src/scripts/run_ui.sh
-```
-
-or manually:
-```bash
-streamlit run src/ui/app.py
-```
-
-### Step 3 — Open in browser
-Streamlit will print something like:
-```
-Local URL: http://localhost:8501
-```
-
-Open it in your browser.
-
-### What the UI does
-- Lets you **select a task** (tokenize, vocab, BPE, spellcheck, etc.)
-- Loads the **same YAML configs** used by the CLI
-- Executes the **real pipeline code**
-- Displays results **directly in the browser**
-- Allows downloading outputs (CSV, TSV, MD, PNG)
-
-No file browsing or terminal commands are needed during the demo.
-
----
-
-## 2. Project Structure (High-Level)
-
-```
+```text
 project/
-├── configs/                 # YAML configs (single source of truth)
+├── configs/                     # YAML configs for all tasks
 ├── data/
-│   ├── raw/                 # Scraped data
-│   ├── processed/           # Cleaned + derived artifacts
-│   └── reports/             # Markdown / plots
+│   ├── raw/                     # scraped corpus
+│   ├── processed/               # cleaned/normalized corpus + derived files
+│   └── reports/                 # task outputs (json/md/csv/png)
 ├── src/
-│   ├── nlp_project/         # Core library code
-│   │   ├── preprocess/
-│   │   ├── qc/
-│   │   ├── tasks/
-│   │   └── common/
-│   ├── ui/                  # Streamlit Demo UI
-│   └── scripts/             # Pipeline runners
+│   ├── nlp_project/
+│   │   ├── common/              # config loader
+│   │   ├── scrape/              # scraper
+│   │   ├── preprocess/          # clean + metadata normalization
+│   │   ├── qc/                  # audits and corpus summary
+│   │   ├── tasks/               # Project 1 task modules
+│   │   └── p2/                  # Project 2 task modules
+│   ├── ui/
+│   │   ├── app.py               # Project 1 UI
+│   │   └── app_p2.py            # Project 2 UI
+│   └── scripts/                 # run scripts
 └── README.md
 ```
 
----
+## 2) Environment
 
-## 3. Running the Pipeline via CLI (Reproducible)
+Typical dependencies:
 
-All CLI commands use YAML configs under `configs/`.
+```bash
+pip install streamlit pandas numpy matplotlib pyyaml requests beautifulsoup4 lxml tqdm scikit-learn
+```
 
-### Preprocessing pipeline
+## 3) Main Pipelines
+
+### A) Extend dataset + preprocess
+
+```bash
+./src/scripts/run_extend_and_preprocess.sh
+```
+
+This does:
+1. scrape append (`configs/scrape_qz_inform_extend.yaml`)
+2. raw audit
+3. cleaning
+4. metadata normalization
+5. corpus summary
+
+### B) Scrape only
+
+```bash
+./src/scripts/run_scrape.sh
+```
+
+Or with a custom config:
+
+```bash
+./src/scripts/run_scrape.sh configs/scrape_qz_inform_extend.yaml
+```
+
+### C) Preprocess only
+
 ```bash
 ./src/scripts/run_preprocess.sh
 ```
 
-This runs:
-1. Raw data audit  
-2. Text cleaning  
-3. Metadata normalization  
-4. Corpus summary report  
+## 4) Run UIs
 
----
+### Project 1 UI
 
-## 4. Running Individual Tasks via CLI
-
-All tasks are exposed via `nlp_project.cli`.
-
-### Example: Tokenization
 ```bash
-python -m nlp_project.cli task tokenize \
-  --config configs/task_tokenize.yaml
+./src/scripts/run_ui.sh
 ```
 
-### Example: Vocabulary
+### Project 2 UI (separate)
+
 ```bash
-python -m nlp_project.cli task vocab \
-  --config configs/task_vocab.yaml
+./src/scripts/run_ui_p2.sh
 ```
 
-### Example: Heaps’ Law
+## 5) Project 2 CLI Commands
+
+All commands use `python3` with `PYTHONPATH=src`.
+
+### Task 1: N-gram models + perplexity
+
 ```bash
-python -m nlp_project.cli task heaps \
-  --config configs/task_heaps.yaml
+PYTHONPATH=src python3 -m nlp_project.cli task p2-ngram --config configs/task_p2_ngram.yaml
 ```
 
-### Example: BPE Training
+Output:
+- `data/reports/p2_task1_ngram_report.json`
+
+### Task 2: Smoothing comparison
+
 ```bash
-python -m nlp_project.cli task bpe-train \
-  --config configs/task_bpe_train.yaml
+PYTHONPATH=src python3 -m nlp_project.cli task p2-smoothing --config configs/task_p2_smoothing.yaml
 ```
 
----
+Output:
+- `data/reports/p2_task2_smoothing_report.json`
 
-## 5. Sentence Segmentation (Important Note)
+### Task 4: Dot end-of-sentence with Logistic Regression (L1 vs L2)
 
-Sentence segmentation was handled as follows:
-
-- **Rule-based segmentation** using punctuation heuristics  
-- **Manual GOLD annotation** for evaluation  
-- Evaluation compares **boundary positions**, not sentence strings  
-- Precision / Recall / F1 are computed over boundary matches  
-
-The manual work was **only for GOLD data creation**, not during runtime.
-
----
-
-## 6. Spell Checking
-
-Two spellcheckers are implemented:
-
-### Baseline
-- Standard Levenshtein distance  
-- Length filtering + first-letter constraint  
-
-### Weighted
-- Uses a **synthetic confusion matrix**  
-- Lower substitution cost for realistic Kazakh diacritic confusions  
-- Evaluated against the baseline using Accuracy@1 and Accuracy@5  
-
----
-
-## 7. Design Philosophy
-
-- **YAML-first configuration** (UI and CLI share the same configs)  
-- **Thin CLI wrappers**  
-- **UI runs real code**, not hardcoded outputs  
-- Modular, testable, and presentation-friendly  
-
----
-
-## 8. Requirements
-
-- Python 3.10+  
-- streamlit  
-- pandas  
-- numpy  
-- matplotlib  
-- pyyaml  
-
-Install dependencies as needed:
 ```bash
-pip install streamlit pandas numpy matplotlib pyyaml
+PYTHONPATH=src python3 -m nlp_project.cli task p2-dot-lr --config configs/task_p2_dot_lr.yaml
 ```
 
+Output:
+- `data/reports/p2_task4_dot_lr_report.json`
+
+## 6) Notes
+
+- Project 2 results will change when the corpus grows (after new scraping).
+- Re-run preprocessing before rerunning P2 tasks.
+- P2 UI supports changing essential parameters live (useful for class demo questions).
+
 ---
 
-## 9. Intended Use
-
-- Academic NLP coursework  
-- Live demonstrations  
-- Corpus analysis experiments  
-- Reproducible NLP pipelines  
-
----
-
-**Author:** Behruz Gurbanli  & Madina Kylyshkanova
+**Authors:** Behruz Gurbanli & Madina Kylyshkanova  
 **Course:** Natural Language Processing  
 **Semester:** Spring 2026
