@@ -1,0 +1,627 @@
+{
+  "dataset": {
+    "input_path": "data/processed/qz_kazakh_latn_clean_norm.jsonl",
+    "text_field": "clean_text",
+    "documents": 2473,
+    "training_sequences": 39809,
+    "total_tokens": 530644,
+    "distinct_words_before_training": 55456,
+    "trained_vocabulary": 24481
+  },
+  "settings": {
+    "lowercase": true,
+    "remove_timestamps": true,
+    "vector_size": 100,
+    "window": 5,
+    "min_count": 3,
+    "workers": 4,
+    "sg": 1,
+    "negative": 10,
+    "epochs": 15,
+    "seed": 42,
+    "use_bigrams": true,
+    "phrase_min_count": 5,
+    "phrase_threshold": 10.0
+  },
+  "target_words": [
+    "qazaqstan",
+    "prezıdenti",
+    "memlekettik",
+    "halyqaralyq",
+    "ulttyq",
+    "adam",
+    "jumys",
+    "ortalyq",
+    "tramp",
+    "aqsh"
+  ],
+  "similar_words": {
+    "qazaqstan": [
+      {
+        "word": "federatsııasy",
+        "score": 0.534813642501831
+      },
+      {
+        "word": "ulttyq_quramasynyń",
+        "score": 0.5012138485908508
+      },
+      {
+        "word": "aınalym",
+        "score": 0.49701088666915894
+      },
+      {
+        "word": "qazaqstannyń",
+        "score": 0.4938017725944519
+      },
+      {
+        "word": "qazaqstan_fýtbol",
+        "score": 0.4934133291244507
+      },
+      {
+        "word": "qazaqstan_respýblıkasynyń",
+        "score": 0.4882977306842804
+      },
+      {
+        "word": "asia",
+        "score": 0.4779166281223297
+      },
+      {
+        "word": "federatsııasynyń",
+        "score": 0.4745541512966156
+      },
+      {
+        "word": "jomart_toqaev",
+        "score": 0.46813246607780457
+      },
+      {
+        "word": "davıd",
+        "score": 0.4597375988960266
+      }
+    ],
+    "prezıdenti": [
+      {
+        "word": "burynǵy_vıtse",
+        "score": 0.7182215452194214
+      },
+      {
+        "word": "federıka",
+        "score": 0.6905326247215271
+      },
+      {
+        "word": "gýstavo",
+        "score": 0.6800919771194458
+      },
+      {
+        "word": "mogerını",
+        "score": 0.6721814274787903
+      },
+      {
+        "word": "kamala_harrıs",
+        "score": 0.6599905490875244
+      },
+      {
+        "word": "výchıch",
+        "score": 0.6596899628639221
+      },
+      {
+        "word": "eýropalyq_keńestiń",
+        "score": 0.6594089269638062
+      },
+      {
+        "word": "taıyp",
+        "score": 0.6544389724731445
+      },
+      {
+        "word": "itshak",
+        "score": 0.6535925269126892
+      },
+      {
+        "word": "mıgel",
+        "score": 0.6522489190101624
+      }
+    ],
+    "memlekettik": [
+      {
+        "word": "nagradamen",
+        "score": 0.43162044882774353
+      },
+      {
+        "word": "tarıhı_mádenı",
+        "score": 0.4245707392692566
+      },
+      {
+        "word": "kirister",
+        "score": 0.4241480827331543
+      },
+      {
+        "word": "qyzmetshiler",
+        "score": 0.41265928745269775
+      },
+      {
+        "word": "talaptaryn",
+        "score": 0.4107060730457306
+      },
+      {
+        "word": "ulttyq_taýarlar",
+        "score": 0.40962788462638855
+      },
+      {
+        "word": "jarǵylyq",
+        "score": 0.4096119701862335
+      },
+      {
+        "word": "stıpendııa",
+        "score": 0.40884530544281006
+      },
+      {
+        "word": "mekemeniń",
+        "score": 0.4067547619342804
+      },
+      {
+        "word": "ulttyq_kınony",
+        "score": 0.40299344062805176
+      }
+    ],
+    "halyqaralyq": [
+      {
+        "word": "jahandyq",
+        "score": 0.46126142144203186
+      },
+      {
+        "word": "boks",
+        "score": 0.4535380005836487
+      },
+      {
+        "word": "uıymy",
+        "score": 0.43524235486984253
+      },
+      {
+        "word": "televızııalyq",
+        "score": 0.42669299244880676
+      },
+      {
+        "word": "baıqaýynyń",
+        "score": 0.4244212806224823
+      },
+      {
+        "word": "uıym_ókilderi",
+        "score": 0.42159906029701233
+      },
+      {
+        "word": "festıvaline",
+        "score": 0.4186868667602539
+      },
+      {
+        "word": "qazaqstannyń_týrıstik",
+        "score": 0.4082157015800476
+      },
+      {
+        "word": "jobasy",
+        "score": 0.40778443217277527
+      },
+      {
+        "word": "volonterler",
+        "score": 0.4058935046195984
+      }
+    ],
+    "ulttyq": [
+      {
+        "word": "mura",
+        "score": 0.43059900403022766
+      },
+      {
+        "word": "halyqaralyq_deńgeıde",
+        "score": 0.42372071743011475
+      },
+      {
+        "word": "murasyn",
+        "score": 0.4172254204750061
+      },
+      {
+        "word": "sportty",
+        "score": 0.4133310914039612
+      },
+      {
+        "word": "qolóner",
+        "score": 0.4087361693382263
+      },
+      {
+        "word": "kınostýdııasy",
+        "score": 0.40620237588882446
+      },
+      {
+        "word": "ónerdi",
+        "score": 0.4052366316318512
+      },
+      {
+        "word": "materıaldyq_emes",
+        "score": 0.4026368260383606
+      },
+      {
+        "word": "tóraǵasy_gennadıı",
+        "score": 0.39448586106300354
+      },
+      {
+        "word": "ulttyq_mýzykalyq",
+        "score": 0.39436018466949463
+      }
+    ],
+    "adam": [
+      {
+        "word": "alıat",
+        "score": 0.616854727268219
+      },
+      {
+        "word": "quryq",
+        "score": 0.5801925659179688
+      },
+      {
+        "word": "baǵytymen",
+        "score": 0.5476990342140198
+      },
+      {
+        "word": "jolaýshy",
+        "score": 0.5263468623161316
+      },
+      {
+        "word": "jemqorlyqqa",
+        "score": 0.5177173018455505
+      },
+      {
+        "word": "kórseqyzar",
+        "score": 0.5094525218009949
+      },
+      {
+        "word": "óz_erkimen",
+        "score": 0.508646547794342
+      },
+      {
+        "word": "adamdy",
+        "score": 0.5033086538314819
+      },
+      {
+        "word": "beıim",
+        "score": 0.4960969090461731
+      },
+      {
+        "word": "óteýden",
+        "score": 0.49525731801986694
+      }
+    ],
+    "jumys": [
+      {
+        "word": "isteýin",
+        "score": 0.5580112934112549
+      },
+      {
+        "word": "isteýine",
+        "score": 0.5506398677825928
+      },
+      {
+        "word": "isteýde",
+        "score": 0.5499082803726196
+      },
+      {
+        "word": "berýshige",
+        "score": 0.5458264350891113
+      },
+      {
+        "word": "kúshiniń",
+        "score": 0.538516640663147
+      },
+      {
+        "word": "kompanııada",
+        "score": 0.5250375866889954
+      },
+      {
+        "word": "isteıtinin",
+        "score": 0.5246750116348267
+      },
+      {
+        "word": "isteıtinine",
+        "score": 0.5246152877807617
+      },
+      {
+        "word": "istelip",
+        "score": 0.5226874351501465
+      },
+      {
+        "word": "isteýden",
+        "score": 0.5193570256233215
+      }
+    ],
+    "ortalyq": [
+      {
+        "word": "basqarmasyn",
+        "score": 0.6291067600250244
+      },
+      {
+        "word": "qolbasshylyǵynyń",
+        "score": 0.6122350096702576
+      },
+      {
+        "word": "federaldyq_tergeý",
+        "score": 0.6018387675285339
+      },
+      {
+        "word": "seýldiń",
+        "score": 0.5924072265625
+      },
+      {
+        "word": "centcom",
+        "score": 0.5823922753334045
+      },
+      {
+        "word": "bóligindegi",
+        "score": 0.5757495760917664
+      },
+      {
+        "word": "ok",
+        "score": 0.5683755278587341
+      },
+      {
+        "word": "bıýrosynyń",
+        "score": 0.5669942498207092
+      },
+      {
+        "word": "keńestiń",
+        "score": 0.5661906599998474
+      },
+      {
+        "word": "lýıdjı",
+        "score": 0.563003659248352
+      }
+    ],
+    "tramp": [
+      {
+        "word": "tramptyń",
+        "score": 0.6382226347923279
+      },
+      {
+        "word": "baıden",
+        "score": 0.6171290874481201
+      },
+      {
+        "word": "izraıldi",
+        "score": 0.6157823204994202
+      },
+      {
+        "word": "prezıdent_donald",
+        "score": 0.615236222743988
+      },
+      {
+        "word": "áskerı_operatsııanyń",
+        "score": 0.6085830330848694
+      },
+      {
+        "word": "zelenskıı",
+        "score": 0.6065439581871033
+      },
+      {
+        "word": "dedi_tramp",
+        "score": 0.6037636399269104
+      },
+      {
+        "word": "aq_úı",
+        "score": 0.6036866903305054
+      },
+      {
+        "word": "tramptan",
+        "score": 0.6011205315589905
+      },
+      {
+        "word": "venesýeladaǵy",
+        "score": 0.6006131768226624
+      }
+    ],
+    "aqsh": [
+      {
+        "word": "aqsh_tyń",
+        "score": 0.5592955350875854
+      },
+      {
+        "word": "vashıngton",
+        "score": 0.5574614405632019
+      },
+      {
+        "word": "aqsh_tan",
+        "score": 0.5493050217628479
+      },
+      {
+        "word": "marko_rýbıo",
+        "score": 0.5486990809440613
+      },
+      {
+        "word": "vens",
+        "score": 0.5470931529998779
+      },
+      {
+        "word": "sırııa",
+        "score": 0.5373769998550415
+      },
+      {
+        "word": "venesýelanyń",
+        "score": 0.5347111225128174
+      },
+      {
+        "word": "venesýela",
+        "score": 0.527808666229248
+      },
+      {
+        "word": "memlekettik_departamenti",
+        "score": 0.5268968343734741
+      },
+      {
+        "word": "ýkraına",
+        "score": 0.5253168344497681
+      }
+    ]
+  },
+  "pairwise_similarities": [
+    {
+      "word_1": "tramp",
+      "word_2": "donald",
+      "similarity": 0.3530074656009674
+    },
+    {
+      "word_1": "aqsh",
+      "word_2": "tramp",
+      "similarity": 0.2753615081310272
+    },
+    {
+      "word_1": "jumys",
+      "word_2": "isteý",
+      "similarity": 0.3821679651737213
+    },
+    {
+      "word_1": "qazaqstan",
+      "word_2": "prezıdenti",
+      "similarity": 0.12155608087778091
+    },
+    {
+      "word_1": "ulttyq",
+      "word_2": "halyqaralyq",
+      "similarity": 0.04732764884829521
+    }
+  ],
+  "vector_equations": [
+    {
+      "equation": "tramp - aqsh + qazaqstan",
+      "missing_words": [],
+      "results": [
+        {
+          "word": "prezıdent_qasym",
+          "score": 0.38316774368286133
+        },
+        {
+          "word": "jomart_toqaev",
+          "score": 0.3818145990371704
+        },
+        {
+          "word": "asia",
+          "score": 0.37846946716308594
+        },
+        {
+          "word": "qazaqstanǵa",
+          "score": 0.3752208650112152
+        },
+        {
+          "word": "qazaqstan_fýtbol",
+          "score": 0.3525874614715576
+        }
+      ]
+    },
+    {
+      "equation": "aqsh - tramp + prezıdenti",
+      "missing_words": [],
+      "results": [
+        {
+          "word": "vıtse_prezıdenti",
+          "score": 0.4531608819961548
+        },
+        {
+          "word": "vens",
+          "score": 0.4447143077850342
+        },
+        {
+          "word": "bolgarııa",
+          "score": 0.4374426007270813
+        },
+        {
+          "word": "estonııa",
+          "score": 0.4348985552787781
+        },
+        {
+          "word": "túrkııa",
+          "score": 0.43425989151000977
+        }
+      ]
+    },
+    {
+      "equation": "jumys + isteý",
+      "missing_words": [],
+      "results": [
+        {
+          "word": "berýshige",
+          "score": 0.8359248042106628
+        },
+        {
+          "word": "isteıtinine",
+          "score": 0.8289734125137329
+        },
+        {
+          "word": "qalaıdy",
+          "score": 0.8169924020767212
+        },
+        {
+          "word": "isteımiz",
+          "score": 0.812236487865448
+        },
+        {
+          "word": "istelip",
+          "score": 0.8110924363136292
+        }
+      ]
+    },
+    {
+      "equation": "ulttyq + halyqaralyq",
+      "missing_words": [],
+      "results": [
+        {
+          "word": "halyqaralyq_deńgeıde",
+          "score": 0.5237840414047241
+        },
+        {
+          "word": "olımpıada_komıtetiniń",
+          "score": 0.49350684881210327
+        },
+        {
+          "word": "uıymy",
+          "score": 0.48698362708091736
+        },
+        {
+          "word": "mipcom",
+          "score": 0.4736311137676239
+        },
+        {
+          "word": "boks",
+          "score": 0.4702228307723999
+        }
+      ]
+    },
+    {
+      "equation": "qazaqstan + prezıdenti - aqsh",
+      "missing_words": [],
+      "results": [
+        {
+          "word": "federatsııasy",
+          "score": 0.5064853429794312
+        },
+        {
+          "word": "jattyqtyrýshysy",
+          "score": 0.4809773862361908
+        },
+        {
+          "word": "qazaqstan_fýtbol",
+          "score": 0.47737911343574524
+        },
+        {
+          "word": "bas_bapkeri",
+          "score": 0.4751714766025543
+        },
+        {
+          "word": "ulttyq_quramasynyń",
+          "score": 0.46025678515434265
+        }
+      ]
+    }
+  ],
+  "artifacts": {
+    "model_path": "data/reports/p3_task2_word2vec/word2vec.model",
+    "vectors_path": "data/reports/p3_task2_word2vec/word2vec_vectors.txt",
+    "similar_words_csv": "data/reports/p3_task2_word2vec/similar_words.csv",
+    "pairwise_csv": "data/reports/p3_task2_word2vec/pairwise_similarities.csv",
+    "equations_csv": "data/reports/p3_task2_word2vec/vector_equations.csv",
+    "parameters_csv": "data/reports/p3_task2_word2vec/parameters.csv"
+  }
+}

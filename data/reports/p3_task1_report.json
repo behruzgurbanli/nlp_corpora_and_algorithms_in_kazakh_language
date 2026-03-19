@@ -1,0 +1,269 @@
+{
+  "dataset": {
+    "input_path": "data/processed/qz_kazakh_latn_clean_norm.jsonl",
+    "text_field": "clean_text",
+    "documents": 2473,
+    "total_words": 532829,
+    "distinct_words": 55473,
+    "rare_words_freq_1": 27152,
+    "words_freq_2": 8325,
+    "frequent_words_freq_gte_threshold": 19996,
+    "frequent_threshold": 3
+  },
+  "settings": {
+    "lowercase": true,
+    "remove_timestamps": true,
+    "top_n": 20,
+    "tdm_max_docs_visual": 50,
+    "stopword_count": 50
+  },
+  "top_words_raw": [
+    {
+      "word": "jáne",
+      "frequency": 6612
+    },
+    {
+      "word": "men",
+      "frequency": 4735
+    },
+    {
+      "word": "bul",
+      "frequency": 4232
+    },
+    {
+      "word": "dep",
+      "frequency": 3080
+    },
+    {
+      "word": "deıin",
+      "frequency": 2361
+    },
+    {
+      "word": "aqsh",
+      "frequency": 2308
+    },
+    {
+      "word": "úshin",
+      "frequency": 2302
+    },
+    {
+      "word": "týraly",
+      "frequency": 2146
+    },
+    {
+      "word": "qazaqparat",
+      "frequency": 2077
+    },
+    {
+      "word": "haa",
+      "frequency": 2076
+    },
+    {
+      "word": "astana",
+      "frequency": 2058
+    },
+    {
+      "word": "qazaqstan",
+      "frequency": 1771
+    },
+    {
+      "word": "ol",
+      "frequency": 1748
+    },
+    {
+      "word": "boıynsha",
+      "frequency": 1509
+    },
+    {
+      "word": "aq",
+      "frequency": 1492
+    },
+    {
+      "word": "onyń",
+      "frequency": 1436
+    },
+    {
+      "word": "da",
+      "frequency": 1421
+    },
+    {
+      "word": "ulttyq",
+      "frequency": 1350
+    },
+    {
+      "word": "bir",
+      "frequency": 1301
+    },
+    {
+      "word": "jańa",
+      "frequency": 1240
+    }
+  ],
+  "top_words_filtered": [
+    {
+      "word": "týraly",
+      "frequency": 2146
+    },
+    {
+      "word": "qazaqstan",
+      "frequency": 1771
+    },
+    {
+      "word": "aq",
+      "frequency": 1492
+    },
+    {
+      "word": "ulttyq",
+      "frequency": 1350
+    },
+    {
+      "word": "jańa",
+      "frequency": 1240
+    },
+    {
+      "word": "sondaı",
+      "frequency": 1212
+    },
+    {
+      "word": "halyqaralyq",
+      "frequency": 1188
+    },
+    {
+      "word": "habarlaıdy",
+      "frequency": 1174
+    },
+    {
+      "word": "buǵan",
+      "frequency": 1155
+    },
+    {
+      "word": "atap",
+      "frequency": 1093
+    },
+    {
+      "word": "pen",
+      "frequency": 1069
+    },
+    {
+      "word": "boldy",
+      "frequency": 1046
+    },
+    {
+      "word": "ótti",
+      "frequency": 1028
+    },
+    {
+      "word": "prezıdenti",
+      "frequency": 1025
+    },
+    {
+      "word": "dedi",
+      "frequency": 1023
+    },
+    {
+      "word": "keıin",
+      "frequency": 1004
+    },
+    {
+      "word": "eń",
+      "frequency": 940
+    },
+    {
+      "word": "memlekettik",
+      "frequency": 938
+    },
+    {
+      "word": "keteıik",
+      "frequency": 926
+    },
+    {
+      "word": "otyr",
+      "frequency": 920
+    }
+  ],
+  "matrices": {
+    "raw": {
+      "vocabulary": [
+        "jáne",
+        "men",
+        "bul",
+        "dep",
+        "deıin",
+        "aqsh",
+        "úshin",
+        "týraly",
+        "qazaqparat",
+        "haa",
+        "astana",
+        "qazaqstan",
+        "ol",
+        "boıynsha",
+        "aq",
+        "onyń",
+        "da",
+        "ulttyq",
+        "bir",
+        "jańa"
+      ],
+      "tdm_shape": [
+        20,
+        2473
+      ],
+      "wwm_shape": [
+        20,
+        20
+      ],
+      "visualized_tdm_docs": 50,
+      "cooccurrence_definition": "Two selected words co-occur if they appear in the same document."
+    },
+    "filtered": {
+      "vocabulary": [
+        "týraly",
+        "qazaqstan",
+        "aq",
+        "ulttyq",
+        "jańa",
+        "sondaı",
+        "halyqaralyq",
+        "habarlaıdy",
+        "buǵan",
+        "atap",
+        "pen",
+        "boldy",
+        "ótti",
+        "prezıdenti",
+        "dedi",
+        "keıin",
+        "eń",
+        "memlekettik",
+        "keteıik",
+        "otyr"
+      ],
+      "tdm_shape": [
+        20,
+        2473
+      ],
+      "wwm_shape": [
+        20,
+        20
+      ],
+      "visualized_tdm_docs": 50,
+      "cooccurrence_definition": "Two selected words co-occur if they appear in the same document."
+    }
+  },
+  "artifacts": {
+    "dataset_statistics_csv": "data/reports/p3_task1/dataset_statistics.csv",
+    "top_words_raw_csv": "data/reports/p3_task1/top_words_raw.csv",
+    "top_words_filtered_csv": "data/reports/p3_task1/top_words_filtered.csv",
+    "top_words_raw_png": "data/reports/p3_task1/top_words_raw.png",
+    "top_words_filtered_png": "data/reports/p3_task1/top_words_filtered.png",
+    "tdm_raw_csv": "data/reports/p3_task1/tdm_top20_raw.csv",
+    "wwm_raw_csv": "data/reports/p3_task1/wwm_top20_raw.csv",
+    "tdm_raw_png": "data/reports/p3_task1/tdm_top20_raw.png",
+    "wwm_raw_png": "data/reports/p3_task1/wwm_top20_raw.png",
+    "tdm_filtered_csv": "data/reports/p3_task1/tdm_top20_filtered.csv",
+    "wwm_filtered_csv": "data/reports/p3_task1/wwm_top20_filtered.csv",
+    "tdm_filtered_png": "data/reports/p3_task1/tdm_top20_filtered.png",
+    "wwm_filtered_png": "data/reports/p3_task1/wwm_top20_filtered.png"
+  }
+}

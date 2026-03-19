@@ -1,0 +1,12 @@
+parameter,value
+vector_size,100
+window,5
+min_count,3
+workers,4
+sg,1
+negative,10
+epochs,15
+seed,42
+use_bigrams,True
+phrase_min_count,5
+phrase_threshold,10.0

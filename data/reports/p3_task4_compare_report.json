@@ -1,0 +1,237 @@
+{
+  "inputs": {
+    "word2vec_json": "data/reports/p3_task2_word2vec_report.json",
+    "glove_json": "data/reports/p3_task3_glove_report.json",
+    "overlap_top_k": 5
+  },
+  "summary": {
+    "query_words_compared": 10,
+    "average_jaccard_overlap": 0.01111111111111111
+  },
+  "per_word_overlap": [
+    {
+      "query_word": "adam",
+      "word2vec_top": [
+        "alıat",
+        "quryq",
+        "baǵytymen",
+        "jolaýshy",
+        "jemqorlyqqa"
+      ],
+      "glove_top": [
+        "er",
+        "taýyp",
+        "shyǵyny",
+        "myńdaǵan",
+        "qaza"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    },
+    {
+      "query_word": "aqsh",
+      "word2vec_top": [
+        "aqsh_tyń",
+        "vashıngton",
+        "aqsh_tan",
+        "marko_rýbıo",
+        "vens"
+      ],
+      "glove_top": [
+        "dollaryn",
+        "dollaryna",
+        "merıendjelıs",
+        "alısha",
+        "11jup"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    },
+    {
+      "query_word": "halyqaralyq",
+      "word2vec_top": [
+        "jahandyq",
+        "boks",
+        "uıymy",
+        "televızııalyq",
+        "baıqaýynyń"
+      ],
+      "glove_top": [
+        "transkaspıı",
+        "standarttarǵa",
+        "arenada",
+        "vıtebsk",
+        "jobasy"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    },
+    {
+      "query_word": "jumys",
+      "word2vec_top": [
+        "isteýin",
+        "isteýine",
+        "isteýde",
+        "berýshige",
+        "kúshiniń"
+      ],
+      "glove_top": [
+        "istegen",
+        "isteıtin",
+        "isteıdi",
+        "istedi",
+        "istep"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    },
+    {
+      "query_word": "memlekettik",
+      "word2vec_top": [
+        "nagradamen",
+        "tarıhı_mádenı",
+        "kirister",
+        "qyzmetshiler",
+        "talaptaryn"
+      ],
+      "glove_top": [
+        "kınony",
+        "organdar",
+        "keńesshi",
+        "qaýipsizdik",
+        "banktiń"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    },
+    {
+      "query_word": "ortalyq",
+      "word2vec_top": [
+        "basqarmasyn",
+        "qolbasshylyǵynyń",
+        "federaldyq_tergeý",
+        "seýldiń",
+        "centcom"
+      ],
+      "glove_top": [
+        "azııanyń",
+        "azııadaǵy",
+        "azııaǵa",
+        "azııada",
+        "azııamen"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    },
+    {
+      "query_word": "prezıdenti",
+      "word2vec_top": [
+        "burynǵy_vıtse",
+        "federıka",
+        "gýstavo",
+        "mogerını",
+        "kamala_harrıs"
+      ],
+      "glove_top": [
+        "trampqa",
+        "zelenskıı",
+        "venesýela",
+        "ákimshiligi",
+        "tramptyń"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    },
+    {
+      "query_word": "qazaqstan",
+      "word2vec_top": [
+        "federatsııasy",
+        "ulttyq_quramasynyń",
+        "aınalym",
+        "qazaqstannyń",
+        "qazaqstan_fýtbol"
+      ],
+      "glove_top": [
+        "atynan",
+        "quramasy",
+        "baqtaǵy",
+        "halqy",
+        "quramasynyń"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    },
+    {
+      "query_word": "tramp",
+      "word2vec_top": [
+        "tramptyń",
+        "baıden",
+        "izraıldi",
+        "prezıdent_donald",
+        "áskerı_operatsııanyń"
+      ],
+      "glove_top": [
+        "tramptyń",
+        "donald",
+        "jazbasynda",
+        "ákimshiligi",
+        "venesýelany"
+      ],
+      "overlap": [
+        "tramptyń"
+      ],
+      "jaccard": 0.1111111111111111
+    },
+    {
+      "query_word": "ulttyq",
+      "word2vec_top": [
+        "mura",
+        "halyqaralyq_deńgeıde",
+        "murasyn",
+        "sportty",
+        "qolóner"
+      ],
+      "glove_top": [
+        "qazaqtyń",
+        "quramanyń",
+        "kınony",
+        "quryltaıda",
+        "mýzeıinde"
+      ],
+      "overlap": [],
+      "jaccard": 0.0
+    }
+  ],
+  "pairwise_similarity_comparison": [
+    {
+      "word_1": "aqsh",
+      "word_2": "tramp",
+      "word2vec_similarity": 0.2753615081310272,
+      "glove_similarity": 0.9082786346918625
+    },
+    {
+      "word_1": "jumys",
+      "word_2": "isteý",
+      "word2vec_similarity": 0.3821679651737213,
+      "glove_similarity": 0.4434898604412124
+    },
+    {
+      "word_1": "qazaqstan",
+      "word_2": "prezıdenti",
+      "word2vec_similarity": 0.12155608087778091,
+      "glove_similarity": 0.5883976075895229
+    },
+    {
+      "word_1": "tramp",
+      "word_2": "donald",
+      "word2vec_similarity": 0.3530074656009674,
+      "glove_similarity": 0.9707338156036798
+    },
+    {
+      "word_1": "ulttyq",
+      "word_2": "halyqaralyq",
+      "word2vec_similarity": 0.04732764884829521,
+      "glove_similarity": 0.7132515193431667
+    }
+  ]
+}

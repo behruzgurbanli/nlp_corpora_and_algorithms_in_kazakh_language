@@ -20,17 +20,3 @@ p3_task1-2-3/
 
 # Built third-party binaries (source is kept)
 third_party/GloVe/build/
-
-# Generated Project 3 processed artifacts
-data/processed/p3_glove/
-
-# Generated Project 3 reports and models
-data/reports/p3_task1/
-data/reports/p3_task1_report.json
-data/reports/p3_task2_word2vec/
-data/reports/p3_task2_word2vec_report.json
-data/reports/p3_task3_glove/
-data/reports/p3_task3_glove_report.json
-data/reports/p3_task4_compare_report.json
-data/reports/p3_task5_classify/
-data/reports/p3_task5_classify_report.json

@@ -1,0 +1,9 @@
+parameter,value
+vector_size,100
+window_size,5
+vocab_min_count,3
+max_iter,15
+x_max,100
+threads,4
+binary,0
+memory,4.0

@@ -1,0 +1,8 @@
+metric,value
+total_documents,2473
+total_words,532829
+distinct_words,55473
+rare_words_freq_1,27152
+words_freq_2,8325
+frequent_words_freq_gte_threshold,19996
+frequent_threshold,3
