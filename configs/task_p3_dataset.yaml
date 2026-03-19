@@ -1,0 +1,11 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+lowercase: true
+remove_timestamps: true
+
+top_n: 20
+tdm_max_docs_visual: 50
+frequent_min_freq: 3
+
+out_dir: "data/reports/p3_task1"
+out_json: "data/reports/p3_task1_report.json"

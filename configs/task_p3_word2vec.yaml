@@ -1,0 +1,20 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+lowercase: true
+remove_timestamps: true
+
+use_bigrams: true
+phrase_min_count: 5
+phrase_threshold: 10.0
+
+vector_size: 100
+window: 5
+min_count: 3
+workers: 4
+sg: 1
+negative: 10
+epochs: 15
+seed: 42
+
+out_dir: "data/reports/p3_task2_word2vec"
+out_json: "data/reports/p3_task2_word2vec_report.json"

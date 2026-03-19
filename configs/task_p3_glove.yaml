@@ -1,0 +1,21 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+lowercase: true
+remove_timestamps: true
+
+glove_build_dir: "third_party/GloVe/build"
+work_dir: "data/processed/p3_glove"
+out_dir: "data/reports/p3_task3_glove"
+out_json: "data/reports/p3_task3_glove_report.json"
+reuse_existing_vectors: false
+existing_vectors_path: "data/processed/p3_glove/kazakh_glove.txt"
+
+memory: 4.0
+vocab_min_count: 3
+vector_size: 100
+max_iter: 15
+window_size: 5
+binary: 0
+threads: 4
+x_max: 100
+verbose: 2

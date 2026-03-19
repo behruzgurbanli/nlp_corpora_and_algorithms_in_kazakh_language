@@ -1,0 +1,34 @@
+inp_jsonl: "data/processed/qz_kazakh_latn_clean_norm.jsonl"
+text_field: "clean_text"
+label_field: "subcategory"
+lowercase: true
+remove_timestamps: true
+
+train_ratio: 0.8
+dev_ratio: 0.1
+seed: 42
+
+count_max_features: 1000
+tfidf_max_features: 1000
+pmi_vocab_size: 5000
+pmi_window: 4
+pmi_vector_size: 100
+
+word2vec_json: "data/reports/p3_task2_word2vec_report.json"
+glove_json: "data/reports/p3_task3_glove_report.json"
+
+hidden_size: 64
+num_layers: 1
+dropout: 0.2
+learning_rate: 0.001
+weight_decay: 0.0
+batch_size: 32
+epochs: 8
+
+baseline_c: 1.0
+baseline_max_iter: 2000
+
+prepare_only: false
+
+out_dir: "data/reports/p3_task5_classify"
+out_json: "data/reports/p3_task5_classify_report.json"

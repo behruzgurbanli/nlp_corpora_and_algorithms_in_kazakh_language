@@ -1,0 +1,4 @@
+word2vec_json: "data/reports/p3_task2_word2vec_report.json"
+glove_json: "data/reports/p3_task3_glove_report.json"
+overlap_top_k: 5
+out_json: "data/reports/p3_task4_compare_report.json"

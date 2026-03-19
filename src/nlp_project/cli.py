@@ -58,6 +58,31 @@ from nlp_project.p2.task4_dot_lr import (
     run_p2_task4_dot_lr,
     format_p2_task4_dot_lr_report,
 )
+from nlp_project.p3.task1_dataset import (
+    P3Task1DatasetConfig,
+    run_p3_task1_dataset,
+    format_p3_task1_dataset_report,
+)
+from nlp_project.p3.task2_word2vec import (
+    P3Task2Word2VecConfig,
+    run_p3_task2_word2vec,
+    format_p3_task2_word2vec_report,
+)
+from nlp_project.p3.task3_glove import (
+    P3Task3GloveConfig,
+    run_p3_task3_glove,
+    format_p3_task3_glove_report,
+)
+from nlp_project.p3.task4_compare import (
+    P3Task4CompareConfig,
+    run_p3_task4_compare,
+    format_p3_task4_compare_report,
+)
+from nlp_project.p3.task5_classify import (
+    P3Task5ClassifyConfig,
+    run_p3_task5_classify,
+    format_p3_task5_classify_report,
+)
 
 
 
@@ -226,6 +251,41 @@ def cmd_task_p2_dot_lr(args: argparse.Namespace) -> int:
     return 0
 
 
+def cmd_task_p3_dataset(args: argparse.Namespace) -> int:
+    cfg = load_config_as(args.config, P3Task1DatasetConfig)
+    r = run_p3_task1_dataset(cfg)
+    print(format_p3_task1_dataset_report(r, cfg.out_json))
+    return 0
+
+
+def cmd_task_p3_word2vec(args: argparse.Namespace) -> int:
+    cfg = load_config_as(args.config, P3Task2Word2VecConfig)
+    r = run_p3_task2_word2vec(cfg)
+    print(format_p3_task2_word2vec_report(r, cfg.out_json))
+    return 0
+
+
+def cmd_task_p3_glove(args: argparse.Namespace) -> int:
+    cfg = load_config_as(args.config, P3Task3GloveConfig)
+    r = run_p3_task3_glove(cfg)
+    print(format_p3_task3_glove_report(r, cfg.out_json))
+    return 0
+
+
+def cmd_task_p3_compare(args: argparse.Namespace) -> int:
+    cfg = load_config_as(args.config, P3Task4CompareConfig)
+    r = run_p3_task4_compare(cfg)
+    print(format_p3_task4_compare_report(r, cfg.out_json))
+    return 0
+
+
+def cmd_task_p3_classify(args: argparse.Namespace) -> int:
+    cfg = load_config_as(args.config, P3Task5ClassifyConfig)
+    r = run_p3_task5_classify(cfg)
+    print(format_p3_task5_classify_report(r, cfg.out_json))
+    return 0
+
+
 def build_parser() -> argparse.ArgumentParser:
     p = argparse.ArgumentParser(prog="nlp_project", description="Kazakh NLP corpus pipeline")
     sub = p.add_subparsers(dest="cmd", required=True)
@@ -331,6 +391,26 @@ def build_parser() -> argparse.ArgumentParser:
     p_p2_lr = sub_task.add_parser("p2-dot-lr", help="Project 2 Task 4: dot EoS logistic regression (L1/L2)")
     p_p2_lr.add_argument("--config", required=True, help="Path to task_p2_dot_lr YAML config")
     p_p2_lr.set_defaults(func=cmd_task_p2_dot_lr)
+
+    p_p3_ds = sub_task.add_parser("p3-dataset", help="Project 3 Task 1: dataset description + matrices")
+    p_p3_ds.add_argument("--config", required=True, help="Path to task_p3_dataset YAML config")
+    p_p3_ds.set_defaults(func=cmd_task_p3_dataset)
+
+    p_p3_w2v = sub_task.add_parser("p3-word2vec", help="Project 3 Task 2: Word2Vec training + evaluation")
+    p_p3_w2v.add_argument("--config", required=True, help="Path to task_p3_word2vec YAML config")
+    p_p3_w2v.set_defaults(func=cmd_task_p3_word2vec)
+
+    p_p3_glove = sub_task.add_parser("p3-glove", help="Project 3 Task 3: GloVe training + evaluation")
+    p_p3_glove.add_argument("--config", required=True, help="Path to task_p3_glove YAML config")
+    p_p3_glove.set_defaults(func=cmd_task_p3_glove)
+
+    p_p3_cmp = sub_task.add_parser("p3-compare", help="Project 3 Task 4: compare Word2Vec and GloVe")
+    p_p3_cmp.add_argument("--config", required=True, help="Path to task_p3_compare YAML config")
+    p_p3_cmp.set_defaults(func=cmd_task_p3_compare)
+
+    p_p3_cls = sub_task.add_parser("p3-classify", help="Project 3 Task 5: classify text with neural models")
+    p_p3_cls.add_argument("--config", required=True, help="Path to task_p3_classify YAML config")
+    p_p3_cls.set_defaults(func=cmd_task_p3_classify)
 
     return p
 
