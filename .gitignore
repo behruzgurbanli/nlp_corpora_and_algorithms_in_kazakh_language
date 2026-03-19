@@ -1,6 +1,7 @@
 # macOS / local workspace
 .DS_Store
 project.code-workspace
+.vscode/
 
 # Python caches
 __pycache__/
